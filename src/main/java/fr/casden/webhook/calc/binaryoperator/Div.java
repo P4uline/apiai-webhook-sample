@@ -12,7 +12,7 @@ public class Div extends BinaryOperator {
 
 	@Override
 	public String labelize() {
-		return "divided by";
+		return "divisé par";
 	}
 	
 	@Override

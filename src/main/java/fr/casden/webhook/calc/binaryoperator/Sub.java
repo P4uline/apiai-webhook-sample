@@ -9,7 +9,7 @@ public class Sub extends BinaryOperator {
 
 	@Override
 	public String labelize() {
-		return "minus";
+		return "moins";
 	}
 	
 	@Override

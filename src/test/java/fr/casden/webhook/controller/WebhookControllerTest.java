@@ -33,7 +33,7 @@ public class WebhookControllerTest {
 		
 		mvc.perform(mockHttpServletRequestBuilder).
 			andExpect(status().isOk()).
-			andExpect(content().json(webhookResponse("2 plus 3 is equal to 5").toString()));
+			andExpect(content().json(webhookResponse("2 plus 3 est égal à 5").toString()));
 	}
 
 	@Test
@@ -43,7 +43,7 @@ public class WebhookControllerTest {
 		
 		mvc.perform(mockHttpServletRequestBuilder).
 		andExpect(status().isOk()).
-		andExpect(content().json(webhookResponse("4 minus 3 is equal to 1").toString()));
+		andExpect(content().json(webhookResponse("4 moins 3 est égal à 1").toString()));
 	}
 	
 	@Test
@@ -53,7 +53,7 @@ public class WebhookControllerTest {
 		
 		mvc.perform(mockHttpServletRequestBuilder).
 		andExpect(status().isOk()).
-		andExpect(content().json(webhookResponse("4 multiplied by 3 is equal to 12").toString()));
+		andExpect(content().json(webhookResponse("4 multiplié par 3 est égal à 12").toString()));
 	}
 	
 	@Test
@@ -63,7 +63,7 @@ public class WebhookControllerTest {
 		
 		mvc.perform(mockHttp).
 			andExpect(status().isOk()).
-			andExpect(content().json(webhookResponse("4 divided by 2 is equal to 2").toString()));
+			andExpect(content().json(webhookResponse("4 divisé par 2 est égal à 2").toString()));
 	}
 	
 	@Test
@@ -73,6 +73,6 @@ public class WebhookControllerTest {
 		
 		mvc.perform(mockHttp).
 			andExpect(status().isOk()).
-			andExpect(content().json(webhookResponse("Sorry, I can not divide by 0").toString()));
+			andExpect(content().json(webhookResponse("Désolé, je ne peux pas diviser par 0").toString()));
 	}
 }

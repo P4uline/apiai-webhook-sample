@@ -61,13 +61,13 @@ public class WebhookController {
 	}
 	
 	private String speech(int a, int b, BinaryOperator op, int calc) {
-		return a + " " + op.labelize() + " " + b + " is equal to " + calc;
+		return a + " " + op.labelize() + " " + b + " est égal à " + calc;
 	}
 
 	private String speechError(int a, int b, BinaryOperator op) {
 		if ("/".equals(op.toString()) && b == 0) {
-			return "Sorry, I can not divide by 0";
+			return "Désolé, je ne peux pas diviser par 0";
 		}
-		return "Sorry, an arithmetic error occurs when I was tring to calculate " + a + " " + op + " " + b;
+		return "Désolé, il y a eu une erreur arthmétique lorsque j'étais en train de calculer " + a + " " + op + " " + b;
 	}
 }

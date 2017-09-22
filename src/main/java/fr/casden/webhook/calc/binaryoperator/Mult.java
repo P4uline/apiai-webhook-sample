@@ -9,7 +9,7 @@ public class Mult extends BinaryOperator {
 
 	@Override
 	public String labelize() {
-		return "multiplied by";
+		return "multiplié par";
 	}
 	
 	@Override
