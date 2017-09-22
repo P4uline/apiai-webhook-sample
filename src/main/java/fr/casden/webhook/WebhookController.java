@@ -61,7 +61,7 @@ public class WebhookController {
 	}
 	
 	private String speech(int a, int b, BinaryOperator op, int calc) {
-		return a + " " + op.labelize() + " " + b + " est égal à " + calc;
+		return a + " " + op.labelize() + " " + b + " égal " + calc;
 	}
 
 	private String speechError(int a, int b, BinaryOperator op) {
