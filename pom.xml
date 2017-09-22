@@ -6,9 +6,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<parent>
-		<groupId>fr.casden.maven</groupId>
-		<artifactId>springboot-superpom</artifactId>
-		<version>1.0.9-SNAPSHOT</version>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.2.RELEASE</version>
 	</parent>
 
 	<properties>
@@ -18,7 +18,7 @@
 		<java.version>1.8</java.version>
 		<spring-boot-admin-starter-client.version>1.4.4</spring-boot-admin-starter-client.version>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -29,14 +29,14 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-		   <groupId>org.json</groupId>
-		   <artifactId>json</artifactId>
-		   <!-- <version>20080701</version> -->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<!-- <version>20080701</version> -->
 		</dependency>
 		<dependency>
 			<groupId>ai.api</groupId>
@@ -45,7 +45,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-        <plugins>
+		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
@@ -53,14 +53,14 @@
 					<executable>true</executable>
 				</configuration>
 			</plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-eclipse-plugin</artifactId>
-                <configuration>
-                    <downloadSources>true</downloadSources>
-                    <downloadJavadocs>true</downloadJavadocs>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<configuration>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>true</downloadJavadocs>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
